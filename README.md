@@ -18,7 +18,7 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
 
 ### Transform: 
 
-* Initially we aimed to build our database using the PostGreSQL tool at the onset. We struggled to import the .csv file into PGAdmin, though. We suspect that this is likely due to a number of special characters that were used in the "listing name" field. Thus, even though we specified the data type of the aforementioned field as "VARCHAR," the import failed multiple times.
+* Initially we aimed to build our database using the PostgreSQL tool at the onset. We struggled to import the .csv file into PGAdmin, though. We suspect that this is likely due to a number of special characters that were used in the "listing name" field. Thus, even though we specified the data type of the aforementioned field as "VARCHAR," the import failed multiple times.
 
 * Instead, we converted all datasets into Pandas dataframes by pulling them into a jupyter notebook file. 
    * We used the ".read_csv" Pandas method for the Kaggle data after removing fields from the Kaggle .csv file that weren't relevant to our pursuits (such as "neighbourhood-group" which presented no data, and "neighbourhood" which presented data as both an integer and as a string).
