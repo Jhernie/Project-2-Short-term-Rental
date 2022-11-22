@@ -20,9 +20,10 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
 
 * Initially we aimed to build our database using the PostGreSQL tool at the onset. We struggled to import the .csv file into PGAdmin, though. We suspect that this is likely due to a number of special characters that were used in the "listing name" field. Thus, even though we specified the data type of the aforementioned field as "VARCHAR," the import failed multiple times.
 
-* Instead, we converted all datasets into Pandas dataframes by pulling them into a jupyter notebook file. We used the ".read_csv" Pandas method for the Kaggle data. We created a function using a "for loop" to extract the relevant datapoints from the Air B&B api.
-
-* We then removed fields from the Kaggle .csv file that weren't relevant to our pursuits (such as "neighbourhood-group" which presented no data, and "neighbourhood" which presented data as both an integer and as a string).
+* Instead, we converted all datasets into Pandas dataframes by pulling them into a jupyter notebook file. 
+   * We used the ".read_csv" Pandas method for the Kaggle data after removing fields from the Kaggle .csv file that weren't relevant to our pursuits (such as "neighbourhood-group" which presented no data, and "neighbourhood" which presented data as both an integer and as a string).
+   
+   * We created a function using a "for loop" to extract the relevant datapoints from the Air B&B api.
 
 * We appended multiple dataframes pulled from the RapidAPI AirB&B "Search Property by Place" end point using the Pandas .concat method. This created one main table for all of the AirB&B API data pulls.
 
