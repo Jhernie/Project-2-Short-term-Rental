@@ -30,7 +30,7 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
 * In order to merge, it was required that we: 
     1. Identify the field that was consistent between all of the tables (primary key). In this case, we used the "unique listing ID."
 
-    2. Ensure that both fields were the same data type. Upon ingest, one field was an "object" and the other was an "int." To remedy this, we cast both fiels to "int" using the .astype(int) function in Pandas.
+    2. Ensure that both fields were the same data type. Upon ingest, one field was an "object" and the other was an "int." To remedy this, we cast both fields to "int" using the .astype(int) function in Pandas.
 
 * Finally, we merged the API dataframe and Kaggle dataframe using an inner merge to create a new table, preserving only the content that existed in the "Chicago" area and dropping all values from the kaggle dataset that were associated with geographies other than "Chicago." *
 
