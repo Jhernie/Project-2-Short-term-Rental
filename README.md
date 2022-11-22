@@ -50,6 +50,8 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
 
 * RapidAPI is an opensource tool that anyone can contribute to. As such, accuracy of the data varies. Our API was created by user "DataCrawler."
 
+* RapidAPI has a paid tier. On the "freemium" version, an individual is heavily limited by the number of queries they can pull. We purchased more queries for our purposes, but it's worth noting for anyone who is interested in replicating the project that it can quickly become costly to query this API resource.
+
 * With more time, we would have web-scraped the AirBnb platform to gain missing data and add it as a table into the database.
 
 * Though we did not use the time to analyze the datasets, analysis could be performed on a number of metrics included in the tables procured. Below is a list of a few questions that could be explored with this data: 
