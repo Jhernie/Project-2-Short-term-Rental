@@ -8,6 +8,8 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
 
 1. We used the AirB&B API hosted in the RapidAPI hub to query using the [Search Property by Place end point.](https://rapidapi.com/DataCrawler/api/airbnb19/)
 
+<img width="1103" alt="Screenshot 2022-11-22 at 6 29 50 PM" src="https://user-images.githubusercontent.com/37047605/203448590-f272b365-95c5-4d02-81af-70e2d9de3857.png">
+
 2. We did this 5x because the specified endpoint would not allow a range of guest limits, but rather specified a fixed guest count per query.
 
 3. We then found a Kaggle dataset that showed AirB&B listings in .csv form for [all US geographies](https://www.kaggle.com/datasets/kritikseth/us-airbnb-open-data).
