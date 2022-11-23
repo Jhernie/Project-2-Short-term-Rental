@@ -14,6 +14,9 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
 
 4. Finally, we identified fields that we found only in the API resource and not in the Kaggle dataset, justifying the need to identify more than one datasource. The fields are listed below:
     * "Rating" 
+    * "Adults"
+    * "Baths" 
+    * "Beds"
 
 
 ### Transform: 
