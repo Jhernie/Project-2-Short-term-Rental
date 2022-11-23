@@ -1,0 +1,1 @@
+SELECT * FROM airbnb_database LIMIT 5;
