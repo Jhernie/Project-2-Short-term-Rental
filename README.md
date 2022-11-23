@@ -54,7 +54,7 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
 
 * *Later in the assignment, we realized that it would be more architecturally sound to preserve each table from the API pull as it's own dataframe to then load into our specified database (instead of appending each table to each other, and merging the tables together). This would have allowed for queryies to be performed on each table, or joins that accomplished the same goals, while preserving the integrity of each data pull. With more time, we could explore this method of data architecting.
 
-* RapidAPI is an opensource tool that anyone can contribute to. As such, accuracy of the data varies. Our API was created by user "DataCrawler." We explored a different way to access the AirB&B API via another 3rd party resource. 
+* RapidAPI is an opensource tool that anyone can contribute to. As such, accuracy of the data varies. Our API was created by user "DataCrawler." We explored a different way to access the AirB&B API via another 3rd party resource. However, [this method](https://github.com/nderkach/airbnb-python) required digging into the html on the AirB&B site to find the relevant API end points used by AirB&B internally. As such, we left that method to be explored another day.
 
 * RapidAPI has a paid tier. On the "freemium" version, an individual is heavily limited by the number of queries they can pull. We purchased more queries for our purposes, but it's worth noting for anyone who is interested in replicating the project that it can quickly become costly to query this API resource.
 
