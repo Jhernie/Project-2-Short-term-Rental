@@ -36,7 +36,7 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
 
     2. Ensure that both fields were the same data type. Upon ingest, one field was an "object" and the other was an "int." To remedy this, we cast both fields to "int" using the .astype(int) function in Pandas.
 
-* Finally, we merged the API dataframe and Kaggle dataframe using an inner merge to create a new table, preserving only the content that existed in the "Chicago" area and dropping all values from the kaggle dataset that were associated with geographies other than "Chicago." *
+* Finally, we merged the API dataframe and Kaggle dataframe using an inner merge to create a new table, preserving only the content that existed in the "Chicago" area and dropping all values from the kaggle dataset that were associated with geographies other than "Chicago." 
 
 
 ### Load:
@@ -47,7 +47,8 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
    2. Build the "engine" by configuring the connection string with credentials, referencing the config file
    3. Run "df.to_sql" to initiate the connection
    4. Run the code to push the dataframe into the database
-* This database can accept additional data sources if we want to create supplemental tables for future analysis.
+* Once connected, a user can perform queries on the table using SQL, such as the query depicted below.
+![Screenshot (65)](https://user-images.githubusercontent.com/37047605/203453422-db1a4174-e23e-4f77-900d-7f81638dfaa3.png)
 
 ## Considerations:
 
