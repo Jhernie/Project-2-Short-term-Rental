@@ -20,10 +20,9 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
     * "Baths" 
     * "Beds"
 
-
 ### Transform: 
 
-* Initially we aimed to build our database using the PostgreSQL tool at the onset. We struggled to import the .csv file into PGAdmin, though. We suspect that this is likely due to a number of special characters that were used in the "listing name" field. Thus, even though we specified the data type of the aforementioned field as "VARCHAR," the import failed multiple times.
+* Initially we aimed to build our database using the PostgreSQL tool at the onset. We struggled to import the .csv file into pgAdmin, though. We suspect that this is likely due to a number of special characters that were used in the "listing name" field. Thus, even though we specified the data type of the aforementioned field as "VARCHAR," the import failed multiple times.
 
 * Instead, we converted all datasets into Pandas dataframes by pulling them into a jupyter notebook file. 
    * We used the ".read_csv" Pandas method for the Kaggle data after removing fields from the Kaggle .csv file that weren't relevant to our pursuits (such as "neighbourhood-group" which presented no data, and "neighbourhood" which presented data as both an integer and as a string).
@@ -42,18 +41,19 @@ Our group (Jhernie Evangelista, Georgia Myers, Lija Hoffman, Niurika Gonzalez) f
 
 ### Load:
 
-* Create postgres database
-* Load into table
-* Once created, add UN and PW into connection string
-* Run last part of the code to push dataframes into postgres database
-* If you have dataframes, use df.to_sql
-
+* With the objective of eventually being able to share the freshly structured tables externally, we created a new database using PostgreSQL and the pgAdmin tool.
+* Using SQLAlchemy, we created an engine to load the main table into the database using the following steps:
+   1. Create a "config.py" file with necessary credentials
+   2. Build the "engine" by configuring the connection string with credentials, referencing the config file
+   3. Run "df.to_sql" to initiate the connection
+   4. Run the code to push the dataframe into the database
+* This database can accept additional data sources if we want to create supplemental tables for future analysis.
 
 ## Considerations:
 
 * *Later in the assignment, we realized that it would be more architecturally sound to preserve each table from the API pull as it's own dataframe to then load into our specified database (instead of appending each table to each other, and merging the tables together). This would have allowed for queryies to be performed on each table, or joins that accomplished the same goals, while preserving the integrity of each data pull. With more time, we could explore this method of data architecting.
 
-* RapidAPI is an opensource tool that anyone can contribute to. As such, accuracy of the data varies. Our API was created by user "DataCrawler."
+* RapidAPI is an opensource tool that anyone can contribute to. As such, accuracy of the data varies. Our API was created by user "DataCrawler." We explored a different way to access the AirB&B API via another 3rd party resource. 
 
 * RapidAPI has a paid tier. On the "freemium" version, an individual is heavily limited by the number of queries they can pull. We purchased more queries for our purposes, but it's worth noting for anyone who is interested in replicating the project that it can quickly become costly to query this API resource.
 
